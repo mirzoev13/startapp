@@ -1,0 +1,324 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+:root {
+    --color-white: #fff;
+    --color-gray: #555555;
+    --color-accent: #c0301c;
+    --fonts-roboto: font-family: 'Roboto', sans-serif;
+    --fonts-montserrat: font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+/*header start*/
+
+header {
+    height: 969px;
+    position: relative;
+    background: url(../images/Layer\ 10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+section {
+    margin: 0 10vw;
+}
+
+
+/*menu start*/
+
+header section nav {
+    display: grid;
+    position: relative;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3vh;
+}
+
+header section nav h2 {
+    font-size: 230%;
+    color: var(--color-white);
+}
+
+header section nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+}
+
+header section nav ul li a {
+    font-weight: 500;
+    font-size: 110%;
+    color: var(--color-white);
+    transition: all 0.5s ease;
+}
+
+header section nav ul li a:hover,
+header section nav ul li a:focus {
+    color: var(--color-accent);
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+/*menu end*/
+
+/*header main start*/
+header section .startup-text {
+    display: grid;
+    row-gap: 10px;
+    position: relative;
+    text-align: center;
+    padding: 35vh 0px 0vh 0px;
+}
+
+header section .startup-text h1,
+header section .startup-text p,
+header section .startup-text a {
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+header section .startup-text h1 {
+    font-family: var(--fonts-montserrat);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 400%;
+}
+
+header section .startup-text p {
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-top: 1vh;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+header section .startup-text .button_startup {
+    padding-top: 6vh;
+}
+
+
+header section .startup-text .button_startup a {
+    font-size: 130%;
+    font-weight: 600;
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+    padding: 20px 30px;
+    transition: all 0.4s ease-in;
+}
+
+header section .startup-text .button_startup a:hover,
+header section .startup-text .button_startup a:focus {
+    color: #000;
+    background-color: var(--color-white);
+    transition: all 0.4s ease-in;
+}
+
+/*header main end*/
+/*header end*/
+
+/*main start*/
+
+
+/*achivment start*/
+
+main section {
+    padding-top: 10vh;
+}
+
+main section .text {
+    display: grid;
+    row-gap: 25px;
+}
+
+main section .text h2 {
+    text-transform: uppercase;
+}
+
+main section .text h2,
+main section .text>p {
+    color: var(--color-gray);
+    text-align: center;
+}
+
+main section .text hr {
+    width: 50px;
+    border: 1.3px solid var(--color-gray);
+    margin: 0 auto;
+}
+
+
+
+
+main section .block-achivment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 100px;
+    padding-top: 10vh;
+}
+
+main section .block-achivment .achivment {
+    display: grid;
+    row-gap: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+
+main section .block-achivment .achivment .icon i {
+    display: grid;
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    align-items: center;
+    justify-items: center;
+    width: 100px;
+    height: 100px;
+    color: var(--color-accent);
+    font-size: 350%;
+    transition: 0.3s;
+}
+
+main section .block-achivment .achivment .icon i:hover,
+main section .block-achivment .achivment .icon i:focus {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    transition: 0.3s;
+}
+
+main section .block-achivment .achivment h3,
+main section .block-achivment .achivment p {
+    color: var(--color-gray);
+}
+
+main section .block-achivment .achivment h3 {
+    padding-top: 1vh;
+}
+
+main section .block-achivment .achivment p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/*achivment end*/
+
+/*about start*/
+/*about end*/
+
+main section.about {
+    background-color: #f8f8f8;
+    margin: 0;
+    margin-top: 10vh;
+}
+
+main section.about .sub_about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 7%;
+    padding-top: 5vh;
+    margin: 0 10%;
+    column-gap: 50px;
+}
+
+main section.about .sub_about p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+    color: var(--color-gray);
+}
+
+main section.about .card-people {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15%;
+    padding-top: 10vh;
+}
+
+main section.about .card-people .card .image-card {
+    transition: all 0.5s ease-in;
+}
+
+main section.about .card-people .card .image-card:hover {
+    filter: brightness(40%);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+main section.about .card-people .card .text-card {
+    display: grid;
+    row-gap: 10px;
+    padding-top: 1vh;
+}
+
+main section.about .card-people .card h3,
+main section.about .card-people .card p {
+    color: var(--color-gray);
+}
+
+main section.about .card-people .card h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+main section.about .card-people .card p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/**/
+main section .text ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin: 0 20%;
+    padding-top: 1vh;
+    list-style-type: none;
+}
+
+main section .text ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-gray);
+    transition: all 0.4s ease-in;
+}
+
+main section .text ul li a:hover,
+main section .text ul li a:focus {
+    color: var(--color-accent);
+    transition: all 0.4s ease-in;
+}
+
+/**/
+
+main section.work .work-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 15%;
+    padding-top: 10vh;
+}
